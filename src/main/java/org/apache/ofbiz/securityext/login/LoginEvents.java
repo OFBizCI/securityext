@@ -17,7 +17,7 @@
  * under the License.
  *******************************************************************************/
 
-package org.ofbiz.securityext.login;
+package org.apache.ofbiz.securityext.login;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -31,31 +31,31 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang.RandomStringUtils;
-import org.ofbiz.base.crypto.HashCrypt;
-import org.ofbiz.base.util.Debug;
-import org.ofbiz.base.util.GeneralException;
-import org.ofbiz.base.util.UtilFormatOut;
-import org.ofbiz.base.util.UtilHttp;
-import org.ofbiz.base.util.UtilMisc;
-import org.ofbiz.base.util.UtilProperties;
-import org.ofbiz.base.util.UtilValidate;
-import org.ofbiz.base.util.string.FlexibleStringExpander;
-import org.ofbiz.common.login.LoginServices;
-import org.ofbiz.entity.Delegator;
-import org.ofbiz.entity.GenericDelegator;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.entity.GenericValue;
-import org.ofbiz.entity.model.ModelField.EncryptMethod;
-import org.ofbiz.entity.util.EntityCrypto;
-import org.ofbiz.entity.util.EntityQuery;
-import org.ofbiz.entity.util.EntityUtilProperties;
-import org.ofbiz.party.contact.ContactHelper;
-import org.ofbiz.product.product.ProductEvents;
-import org.ofbiz.product.store.ProductStoreWorker;
-import org.ofbiz.service.GenericServiceException;
-import org.ofbiz.service.LocalDispatcher;
-import org.ofbiz.service.ModelService;
-import org.ofbiz.webapp.control.LoginWorker;
+import org.apache.ofbiz.base.crypto.HashCrypt;
+import org.apache.ofbiz.base.util.Debug;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.base.util.UtilFormatOut;
+import org.apache.ofbiz.base.util.UtilHttp;
+import org.apache.ofbiz.base.util.UtilMisc;
+import org.apache.ofbiz.base.util.UtilProperties;
+import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.base.util.string.FlexibleStringExpander;
+import org.apache.ofbiz.common.login.LoginServices;
+import org.apache.ofbiz.entity.Delegator;
+import org.apache.ofbiz.entity.GenericDelegator;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.entity.model.ModelField.EncryptMethod;
+import org.apache.ofbiz.entity.util.EntityCrypto;
+import org.apache.ofbiz.entity.util.EntityQuery;
+import org.apache.ofbiz.entity.util.EntityUtilProperties;
+import org.apache.ofbiz.party.contact.ContactHelper;
+import org.apache.ofbiz.product.product.ProductEvents;
+import org.apache.ofbiz.product.store.ProductStoreWorker;
+import org.apache.ofbiz.service.GenericServiceException;
+import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.ModelService;
+import org.apache.ofbiz.webapp.control.LoginWorker;
 
 /**
  * LoginEvents - Events for UserLogin and Security handling.

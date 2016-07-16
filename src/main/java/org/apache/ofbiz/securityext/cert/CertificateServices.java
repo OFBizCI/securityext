@@ -17,7 +17,7 @@
  under the License.
  */
 
-package org.ofbiz.securityext.cert;
+package org.apache.ofbiz.securityext.cert;
 
 import java.io.IOException;
 import java.security.KeyStore;
@@ -25,12 +25,12 @@ import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.Map;
 
-import org.ofbiz.base.util.KeyStoreUtil;
-import org.ofbiz.entity.Delegator;
-import org.ofbiz.entity.GenericEntityException;
-import org.ofbiz.entity.GenericValue;
-import org.ofbiz.service.DispatchContext;
-import org.ofbiz.service.ServiceUtil;
+import org.apache.ofbiz.base.util.KeyStoreUtil;
+import org.apache.ofbiz.entity.Delegator;
+import org.apache.ofbiz.entity.GenericEntityException;
+import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.service.DispatchContext;
+import org.apache.ofbiz.service.ServiceUtil;
 
 /**
  * CertificateServices
